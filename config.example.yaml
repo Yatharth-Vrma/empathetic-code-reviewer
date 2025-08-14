@@ -1,0 +1,9 @@
+persona: mentor
+warmth: 0.9
+formality: 0.35
+pedagogy_depth: 0.8
+developer_level: junior
+self_critique_passes: 2
+max_resources: 3
+enable_diff: true
+emit_json: true

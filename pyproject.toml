@@ -1,0 +1,40 @@
+[project]
+name = "empathetic-code-reviewer"
+version = "0.2.0"
+description = "AI-powered empathetic code review comment transformer."
+authors = [{name="Yatharth-Vrma"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-generativeai>=0.7.0",
+    "typer>=0.12.3",
+    "pydantic>=2.7.0",
+    "rich>=13.7.0",
+    "pyyaml>=6.0.1",
+    "jsonschema>=4.21.1",
+    "deepdiff>=7.0.1"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2.0","mypy>=1.10.0","ruff>=0.4.0","coverage>=7.5.0","python-dotenv>=1.0.1"]
+extras = ["python-dotenv>=1.0.1"]
+
+[project.scripts]
+empathetic = "empathetic.cli:app"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_configs = true
+strict = true
+
+[tool.coverage.run]
+branch = true
+source = ["empathetic"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
