@@ -62,7 +62,7 @@ cp .env.example .env
 ```
 
 ```bash
-python -m empathetic.cli --input examples/sample_input.json --output report.md --emit-json --enable-diff --developer-level junior
+python -m empathetic.cli --input examples/sample_input.json --output report.md --emit-json --enable-diff --developer-level junior   
 ```
 
 ---
@@ -297,11 +297,5 @@ GitHub Actions workflow:
 ## 16. License
 
 MIT (see LICENSE).
-
----
-
-## 17. Maintainer
-
-You (Yatharth-Vrma) – Top 1% Prompt Engineer.
 
 ---
